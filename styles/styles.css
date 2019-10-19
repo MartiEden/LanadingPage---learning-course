@@ -1,0 +1,588 @@
+@font-face {
+  font-family: 'Museo Slab';
+  src: url('../fonts/MuseoSlab-900.eot');
+  src: url('../fonts/MuseoSlab-900.eot') format('eot'), url('../fonts/MuseoSlab-900.woff') format('woff'), url('../fonts/MuseoSlab-900.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+}
+.react-course {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+.react-course-header {
+  background: url(../assets/Image_back.png) no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.react-course-header-content {
+  color: #FFFFFF;
+  margin-left: 118px;
+  max-width: 450px;
+  position: relative;
+  z-index: 3;
+}
+.react-course-header-content-preTitle {
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 39px;
+  padding-top: 157px;
+  text-transform: uppercase;
+}
+.react-course-header-content-title {
+  font-size: 80px;
+  letter-spacing: 2.67px;
+  line-height: 96px;
+  color: #77CED7;
+  font-family: 'Museo Slab';
+}
+.react-course-header-content-description {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 43px;
+}
+.react-course-header-content-button {
+  background-color: #FFFFFF;
+  border-radius: 9px;
+  display: block;
+  max-width: 236px;
+  padding: 17px 27px;
+  text-align: center;
+}
+.react-course-header-content-button-label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.react-course-header-content:after {
+  background: url(../assets/EPAM_LOGO_Primary.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 25px;
+  left: 10px;
+  position: absolute;
+  top: 70px;
+  width: 68px;
+}
+.react-course-header:before {
+  background-color: #000000;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.react-course-subheader {
+  align-items: center;
+  background-color: #C9DB48;
+  min-height: 265px;
+}
+.react-course-subheader-content {
+  color: #000000;
+  max-width: 780px;
+  text-align: center;
+}
+.react-course-subheader-content-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.react-course-subheader-content-description {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.react-course-subheader:before {
+  background: url(../assets/info.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 100%;
+  max-height: 273px;
+  max-width: 632px;
+  position: absolute;
+  top: -8px;
+  width: 100%;
+}
+.react-course-description {
+  background-color: #ffffff;
+  min-height: 580px;
+}
+.react-course-description-content {
+  max-width: 780px;
+  padding: 70px 20px 0;
+}
+.react-course-description-content-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.react-course-description-content-subTitle {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0 auto 50px;
+  max-width: 550px;
+  text-align: center;
+}
+.react-course-description-content-training {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.react-course-description-content-training-item-title {
+  color: #76CDD8;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.react-course-description-content-training-item:first-child {
+  border-right: 1px solid #404040;
+  box-sizing: border-box;
+  margin-right: 45px;
+  padding-right: 20px;
+  width: 314px;
+}
+.react-course-description-content-training-item:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 314px - 45px);
+}
+.react-course-description-content-training-item:last-child span {
+  display: block;
+  width: 100%;
+}
+.react-course-description-content-training-item-text {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.react-course-description-content-training-item-points {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 38px;
+  padding: 0;
+  width: 50%;
+}
+.react-course-description-content-training-item-points li {
+  list-style-type: none;
+  line-height: 28px;
+}
+.react-course-preModules {
+  align-items: center;
+  background-color: #77CED7;
+  min-height: 214px;
+}
+.react-course-preModules-content {
+  max-width: 780px;
+}
+.react-course-preModules-content-text {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.react-course-preModules:before {
+  background: url(../assets/modules.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 100%;
+  max-width: 780px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.react-course-modules-content {
+  padding-top: 80px;
+  max-width: 780px;
+}
+.react-course-modules-content-title {
+  color: #76CDD8;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.react-course-modules-content-item {
+  margin-bottom: 50px;
+  padding-left: 130px;
+  position: relative;
+}
+.react-course-modules-content-item-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.react-course-modules-content-item-description {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.react-course-modules-content-item-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.react-course-process {
+  background-color: #eeeeee;
+  z-index: 4;
+}
+.react-course-process:before {
+  background: url(../assets/process.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 100%;
+  max-width: 780px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.react-course-process-content {
+  max-width: 780px;
+}
+.react-course-process-content-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.react-course-process-content-items-item {
+  display: flex;
+  margin-bottom: 25px;
+  width: calc(100%/2 - 25px);
+  position: relative;
+}
+.react-course-process-content-items-item:nth-child(odd) {
+  margin-right: 50px;
+}
+.react-course-process-content-items-item-number {
+  align-items: center;
+  background-color: #76CDD8;
+  border-radius: 49px;
+  color: #FFFFFF;
+  display: flex;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 35px;
+}
+.react-course-process-content-items-item-content {
+  padding-left: 50px;
+}
+.react-course-process-content-items-item-content-text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.react-course-process-content-items-item-content-pop {
+  color: #76CDD8;
+  font-size: 12px;
+  line-height: 21px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.react-course-process-content-items-item-content-pop-message {
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #B7B7B7;
+  color: #000000;
+  left: 0;
+  letter-spacing: -0.4px;
+  line-height: 21px;
+  padding: 35px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 1;
+}
+.react-course-process-content-items-item-content-pop-message-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.react-course-process-content-items-item-content-pop-message-text {
+  letter-spacing: -0.4px;
+}
+.react-course-process-content-items-item-content-pop-message-close {
+  color: #76CDD8;
+  cursor: pointer;
+  display: block;
+}
+.react-course-result {
+  background: url(assets/Image_back_2.png) no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.react-course-result-content {
+  max-width: 552px;
+  z-index: 2;
+}
+.react-course-result-content-items-ul {
+  margin: -14px;
+}
+.react-course-result-content-items-ul-li {
+  color: #76CDD8;
+  font-size: 22px;
+  list-style-type: disc;
+}
+.react-course-result-content-items-ul-li-text {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 37px;
+}
+.react-course-result:before {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(-1);
+  z-index: 1;
+}
+.react-course-steps {
+  background-color: #253852;
+  color: #FFFFFF;
+}
+.react-course-steps-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.react-course-steps-content-title {
+  width: 100%;
+}
+.react-course-steps-content-items {
+  max-width: 500px;
+  position: relative;
+  margin: 0 0 70px;
+}
+.react-course-steps-content-items-item {
+  align-items: end;
+  counter-increment: list;
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 2;
+}
+.react-course-steps-content-items-item-text {
+  font-size: 17px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+.react-course-steps-content-items-item:after {
+  background-color: #FFFFFF;
+  border-radius: 36px;
+  content: '';
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 36px;
+  z-index: -1;
+}
+.react-course-steps-content-items-item:before {
+  align-self: flex-start;
+  color: #000000;
+  content: counter(list) " ";
+  font-weight: 700;
+  margin-right: 22px;
+  padding: 13px;
+  z-index: 1;
+}
+.react-course-steps-content-items-item:last-child {
+  margin-bottom: 0;
+}
+.react-course-steps-content-items:before {
+  background-color: #FFFFFF;
+  content: '';
+  display: block;
+  height: 386px;
+  left: 58px;
+  opacity: 0.5;
+  position: absolute;
+  top: 22px;
+  width: 1px;
+}
+.react-course-steps-content-button {
+  background-color: #F15D43;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 70px;
+  max-width: 236px;
+  padding: 17px 27px;
+  text-align: center;
+}
+.react-course-steps-content-button-label {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.react-course-steps-content-infoLabel {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 80px;
+  max-width: 500px;
+  text-align: center;
+}
+.react-course-steps:before {
+  background: url(../assets/steps.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 100%;
+  max-height: 273px;
+  max-width: 624px;
+  position: absolute;
+  top: -18px;
+  width: 100%;
+}
+.react-course-summary-content {
+  max-width: 740px;
+}
+.react-course-summary-content-items {
+  margin-bottom: 70px;
+  padding: 0;
+}
+.react-course-summary-content-items-item {
+  align-items: end;
+  color: #76CDD8;
+  display: flex;
+  font-size: 70px;
+  list-style-type: none;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 2;
+}
+.react-course-summary-content-items-item-label {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 37px;
+  padding-left: 60px;
+}
+.react-course-summary-content-items-item:after {
+  background-color: #76CDD8;
+  border-radius: 36px;
+  content: '';
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 36px;
+  z-index: -1;
+}
+.react-course-summary-content-items-item:last-child {
+  margin-bottom: 0;
+}
+.react-course-summary-content-items-item:before {
+  background: url(../assets/correct-symbol.png) no-repeat;
+  background-size: contain;
+  content: '';
+  height: 16px;
+  left: 10px;
+  position: absolute;
+  top: 16px;
+  width: 16px;
+}
+.react-course-summary-content-todo {
+  margin-bottom: 112px;
+}
+.react-course-summary-content-todo-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.react-course-summary-content-todo-items {
+  padding-left: 22px;
+}
+.react-course-summary-content-todo-items-item {
+  color: #76CDD8;
+  font-size: 22px;
+  list-style-type: disc;
+  margin-bottom: 15px;
+}
+.react-course-summary-content-todo-items-item-label {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 37px;
+}
+.react-course-summary-content-todo-items-item-label-ul-li {
+  list-style-type: none;
+}
+.react-course-summary-content-todo-items-item-label-ul-li-link {
+  color: #76CDD8;
+  line-height: 37px;
+}
+.react-course-summary-content-todo-items-item:last-child {
+  margin-bottom: 0;
+}
+.icon-active {
+  display: block;
+}
+.section-title {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+.coloured {
+  color: #76CDD8;
+}
