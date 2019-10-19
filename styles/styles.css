@@ -19,7 +19,7 @@ ul {
   width: 100%;
 }
 .react-course-header {
-  background: url(../assets/Image_back.png) no-repeat;
+  background: url(../assets/Image_back-min.png) no-repeat;
   background-size: cover;
   min-height: 600px;
   position: relative;
@@ -343,13 +343,13 @@ ul {
   display: block;
 }
 .react-course-result {
-  background: url(../assets/Image_back_2.png) no-repeat;
-  background-size: contain;
+  background: url(../assets/Image_back_2-min.png) no-repeat;
+  background-size: cover;
   min-height: 600px;
   width: 100%;
 }
 .react-course-result-content {
-  max-width: 552px;
+  max-width: 100%;
   z-index: 2;
 }
 .react-course-result-content-items-ul {
@@ -706,6 +706,9 @@ ul {
   }
   .react-course-process-content-items-item:nth-child(odd) {
     margin-right: 0;
+  }
+  .react-course-result {
+    background-size: contain;
   }
   .react-course-result-content {
     width: 100%;
