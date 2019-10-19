@@ -353,7 +353,7 @@ ul {
   z-index: 2;
 }
 .react-course-result-content-items-ul {
-  margin: -14px;
+  margin-left: -14px;
 }
 .react-course-result-content-items-ul-li {
   color: #76CDD8;
