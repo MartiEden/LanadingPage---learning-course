@@ -343,9 +343,9 @@ ul {
   display: block;
 }
 .react-course-result {
-  background: url(assets/Image_back_2.png) no-repeat;
-  background-size: cover;
-  height: 600px;
+  background: url(../assets/Image_back_2.png) no-repeat;
+  background-size: contain;
+  min-height: 600px;
   width: 100%;
 }
 .react-course-result-content {
@@ -585,4 +585,146 @@ ul {
 }
 .coloured {
   color: #76CDD8;
+}
+@media screen and (max-width: 767px) {
+  .react-course-header-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .react-course-header-content-preTitle {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 39px;
+    padding-top: 157px;
+    text-transform: uppercase;
+  }
+  .react-course-header-content-title {
+    font-size: 80px;
+    letter-spacing: 2.67px;
+    line-height: 96px;
+    color: #77CED7;
+    font-family: 'Museo Slab';
+  }
+  .react-course-header-content-button {
+    margin: 0 auto;
+  }
+  .react-course-header-content:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .react-course-header:before {
+    background-color: #000000;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .react-course-description-content {
+    margin-bottom: 50px;
+    padding: 70px 0 0;
+  }
+  .react-course-description-content-subTitle {
+    font-size: 19px;
+  }
+  .react-course-description-content-training-item-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .react-course-description-content-training-item:first-child {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+  }
+  .react-course-description-content-training-item:last-child {
+    width: 100%;
+  }
+  .react-course-description-content-training-item:last-child span {
+    display: block;
+    width: 100%;
+  }
+  .react-course-description-content-training-item-text {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .react-course-description-content-training-item-points {
+    width: 100%;
+  }
+  .react-course-subheader {
+    padding: 20px;
+  }
+  .react-course-preModules {
+    padding: 20px;
+  }
+  .react-course-preModules-content {
+    width: 100%;
+  }
+  .react-course-preModules-content-text {
+    display: block;
+    text-align: center;
+  }
+  .react-course-preModules-content-text .first,
+  .react-course-preModules-content-text .last,
+  .react-course-preModules-content-text .equal {
+    display: block;
+  }
+  .react-course-modules-content {
+    padding-top: 80px;
+    width: 100%;
+  }
+  .react-course-modules-content-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .react-course-modules-content-item {
+    padding: 0;
+  }
+  .react-course-modules-content-item-title {
+    font-size: 22px;
+  }
+  .react-course-modules-content-item-description {
+    font-size: 19px;
+  }
+  .react-course-modules-content-item-icon {
+    display: block;
+    margin: 0 auto 20px;
+    position: relative;
+  }
+  .react-course-process-content {
+    width: 100%;
+  }
+  .react-course-process-content-items {
+    width: 100%;
+  }
+  .react-course-process-content-items-item {
+    width: 100%;
+  }
+  .react-course-process-content-items-item:nth-child(odd) {
+    margin-right: 0;
+  }
+  .react-course-result-content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .react-course-steps-content-title {
+    width: 100%;
+  }
+  .react-course-steps-content-items {
+    padding: 0;
+  }
+  .react-course-steps-content-items:before {
+    content: none;
+  }
+  .react-course-summary-content-todo {
+    margin-bottom: 50px;
+  }
+  .react-course-summary-content-todo-title {
+    font-size: 22px;
+    text-align: center;
+  }
 }

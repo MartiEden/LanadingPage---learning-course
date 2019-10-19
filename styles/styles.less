@@ -426,9 +426,9 @@ ul {
 
     &-result {
 
-        background     : url(assets/Image_back_2.png) no-repeat;
-        background-size: cover;
-        height         : 600px;
+        background     : url(../assets/Image_back_2.png) no-repeat;
+        background-size: contain;
+        min-height     : 600px;
         width          : 100%;
 
         &-content {
@@ -725,4 +725,220 @@ ul {
 
 .coloured {
     color: @lightBlue2;
+}
+
+@media screen and (max-width: 767px) {
+
+    .react-course {
+
+        &-header {
+
+            &-content {
+                margin    : 0 auto;
+                text-align: center;
+
+                &-preTitle {
+                    font-size     : 21px;
+                    line-height   : 28px;
+                    margin-bottom : 39px;
+                    padding-top   : 157px;
+                    text-transform: uppercase;
+                }
+
+                &-title {
+                    font-size     : 80px;
+                    letter-spacing: 2.67px;
+                    line-height   : 96px;
+                    color         : @lightBlue;
+                    font-family   : 'Museo Slab';
+                }
+
+                &-button {
+                    margin: 0 auto;
+                }
+
+                &:after {
+                    left     : 50%;
+                    transform: translateX(-50%);
+                }
+
+            }
+
+            &:before {
+                background-color: rgb(0, 0, 0);
+                bottom          : 0;
+                content         : '';
+                left            : 0;
+                opacity         : 0.75;
+                position        : absolute;
+                right           : 0;
+                top             : 0;
+            }
+        }
+
+        &-description {
+
+            &-content {
+                margin-bottom: 50px;
+                padding      : 70px 0 0;
+
+                &-subTitle {
+                    font-size: 19px;
+                }
+
+                &-training {
+
+                    &-item {
+
+                        &-title {
+                            font-size : 22px;
+                            text-align: center;
+                        }
+
+                        &:first-child {
+                            width        : 100%;
+                            margin       : 0;
+                            padding      : 0;
+                            border       : none;
+                            margin-bottom: 30px;
+                        }
+
+                        &:last-child {
+                            width: 100%;
+
+                            span {
+                                display: block;
+                                width  : 100%;
+                            }
+                        }
+
+                        &-text {
+                            font-size  : 19px;
+                            font-weight: 600;
+                            line-height: 32px;
+                        }
+
+                        &-points {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-subheader {
+            padding: 20px;
+        }
+
+        &-preModules {
+            padding: 20px;
+
+            &-content {
+                width: 100%;
+
+                &-text {
+                    display   : block;
+                    text-align: center;
+
+                    .first,
+                    .last,
+                    .equal {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-modules {
+
+            &-content {
+                padding-top: 80px;
+                width      : 100%;
+
+                &-title {
+                    font-size : 22px;
+                    text-align: center;
+                }
+
+                &-item {
+                    padding: 0;
+
+                    &-title {
+                        font-size: 22px;
+                    }
+
+                    &-description {
+                        font-size: 19px;
+                    }
+
+                    &-icon {
+                        display : block;
+                        margin  : 0 auto 20px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &-process {
+
+            &-content {
+                width: 100%;
+
+                &-items {
+                    width: 100%;
+
+                    &-item {
+                        width: 100%;
+
+                        &:nth-child(odd) {
+                            margin-right: 0;
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-result {
+
+            &-content {
+                width        : 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+        &-steps {
+
+            &-content {
+
+                &-title {
+                    width: 100%;
+                }
+
+                &-items {
+                    padding: 0;
+
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        &-summary {
+
+            &-content {
+
+                &-todo {
+                    margin-bottom: 50px;
+
+                    &-title {
+                        font-size : 22px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
