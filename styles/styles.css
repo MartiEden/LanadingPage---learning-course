@@ -21,7 +21,6 @@ ul {
 .react-course-header {
   background: url(../assets/Image_back-min.png) no-repeat;
   background-size: cover;
-  min-height: 600px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -30,6 +29,7 @@ ul {
   color: #FFFFFF;
   margin-left: 118px;
   max-width: 450px;
+  padding-bottom: 120px;
   position: relative;
   z-index: 3;
 }
@@ -592,9 +592,6 @@ ul {
   }
 }
 @media screen and (max-width: 767px) {
-  .react-course-header {
-    height: 100vh;
-  }
   .react-course-header-content {
     margin: 0 auto;
     text-align: center;
