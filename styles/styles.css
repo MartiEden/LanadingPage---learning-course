@@ -674,7 +674,7 @@ ul {
   .react-course-description-content-training-item-points li {
     margin-bottom: 10px;
   }
-  .react-course-description-content-training-item-points li:last-child {
+  .react-course-description-content-training-item-points:last-child li:last-child {
     margin-bottom: 0;
   }
   .react-course-subheader {
