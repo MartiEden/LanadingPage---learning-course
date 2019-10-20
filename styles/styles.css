@@ -594,7 +594,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .react-course-header {
-    min-height: 500px;
+    max-height: 500px;
   }
   .react-course-header-content {
     margin: 0 auto;
