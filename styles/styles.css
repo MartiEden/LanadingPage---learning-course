@@ -21,7 +21,10 @@ ul {
 .react-course-header {
   background: url(../assets/Image_back-min.png) no-repeat;
   background-size: cover;
-  justify-content: left !important;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  padding: 0 20px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -595,6 +598,7 @@ ul {
 @media screen and (max-width: 767px) {
   .react-course-header {
     max-height: 500px;
+    justify-content: center;
   }
   .react-course-header-content {
     margin: 0 auto;
