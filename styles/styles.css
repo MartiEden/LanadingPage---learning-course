@@ -37,7 +37,7 @@ ul {
 .react-course-header-content-preTitle {
   font-size: 21px;
   line-height: 28px;
-  margin-bottom: 39px;
+  margin-bottom: 80px;
   padding-top: 157px;
   text-transform: uppercase;
 }
@@ -593,16 +593,16 @@ ul {
   }
 }
 @media screen and (max-width: 767px) {
+  .react-course-header {
+    min-height: 500px;
+  }
   .react-course-header-content {
     margin: 0 auto;
     text-align: center;
   }
   .react-course-header-content-preTitle {
-    font-size: 21px;
-    line-height: 28px;
-    margin-bottom: 39px;
-    padding-top: 157px;
-    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 80px;
   }
   .react-course-header-content-title {
     font-size: 80px;
@@ -616,6 +616,7 @@ ul {
   }
   .react-course-header-content:after {
     left: 50%;
+    top: 26px;
     transform: translateX(-50%);
   }
   .react-course-header:before {
@@ -712,6 +713,9 @@ ul {
   }
   .react-course-process-content-items-item:nth-child(odd) {
     margin-right: 0;
+  }
+  .react-course-process-content-items-item-content-pop {
+    font-size: 15px;
   }
   .react-course-process-content-items-item-content-pop-message {
     left: -61px;

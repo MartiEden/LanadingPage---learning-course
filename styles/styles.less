@@ -51,7 +51,7 @@ ul {
             &-preTitle {
                 font-size     : 21px;
                 line-height   : 28px;
-                margin-bottom : 39px;
+                margin-bottom : 80px;
                 padding-top   : 157px;
                 text-transform: uppercase;
             }
@@ -737,17 +737,15 @@ ul {
     .react-course {
 
         &-header {
+            min-height: 500px;
 
             &-content {
                 margin    : 0 auto;
                 text-align: center;
 
                 &-preTitle {
-                    font-size     : 21px;
-                    line-height   : 28px;
-                    margin-bottom : 39px;
-                    padding-top   : 157px;
-                    text-transform: uppercase;
+                    margin-bottom : 10px;
+                    padding-top   : 80px;
                 }
 
                 &-title {
@@ -764,6 +762,7 @@ ul {
 
                 &:after {
                     left     : 50%;
+                    top: 26px;;
                     transform: translateX(-50%);
                 }
 
@@ -901,8 +900,12 @@ ul {
                             ;
                         }
 
-                        &-content-pop-message {
-                            left: -61px;
+                        &-content-pop {
+                            font-size: 15px;
+
+                            &-message {
+                                left: -61px;
+                            }
                         }
                     }
                 }
