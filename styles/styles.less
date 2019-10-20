@@ -725,11 +725,18 @@ ul {
     color: @lightBlue2;
 }
 
+@media screen and (max-width: 950px) {
+    .react-course-process-content-items-item-content-pop-message {
+        left: -52px;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     .react-course {
 
         &-header {
+            height: 100vh;
 
             &-content {
                 margin    : 0 auto;
@@ -892,6 +899,10 @@ ul {
                         &:nth-child(odd) {
                             margin-right: 0;
                             ;
+                        }
+
+                        &-content-pop-message {
+                            left: -60px;
                         }
                     }
                 }
