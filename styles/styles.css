@@ -127,7 +127,6 @@ ul {
 }
 .react-course-description {
   background-color: #ffffff;
-  min-height: 580px;
 }
 .react-course-description-content {
   max-width: 780px;
@@ -152,6 +151,7 @@ ul {
 .react-course-description-content-training {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
   width: 100%;
 }
 .react-course-description-content-training-item-title {
@@ -478,7 +478,7 @@ ul {
 .react-course-steps-content-infoLabel {
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   max-width: 500px;
   text-align: center;
 }
