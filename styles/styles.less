@@ -343,9 +343,10 @@ ul {
             max-width: 780px;
 
             &-items {
-                display  : flex;
-                flex-wrap: wrap;
-                width    : 100%;
+                display      : flex;
+                flex-wrap    : wrap;
+                margin-bottom: 50px;
+                width        : 100%;
 
                 &-item {
                     display      : flex;
@@ -373,6 +374,10 @@ ul {
                         width           : 35px;
 
 
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
                     }
 
                     &-content {
@@ -437,7 +442,6 @@ ul {
 
         background     : url(../assets/Image_back_2-min.png) no-repeat;
         background-size: cover;
-        min-height     : 600px;
         width          : 100%;
 
         &-content {
@@ -445,6 +449,7 @@ ul {
             z-index  : 2;
 
             &-items {
+                margin-bottom: 50px;
 
                 &-ul {
                     margin-left: -14px;

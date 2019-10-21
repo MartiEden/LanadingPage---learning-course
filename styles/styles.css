@@ -279,6 +279,7 @@ ul {
 .react-course-process-content-items {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
   width: 100%;
 }
 .react-course-process-content-items-item {
@@ -303,6 +304,9 @@ ul {
   position: absolute;
   top: 0;
   width: 35px;
+}
+.react-course-process-content-items-item:last-child {
+  margin-bottom: 0;
 }
 .react-course-process-content-items-item-content {
   padding-left: 50px;
@@ -353,12 +357,14 @@ ul {
 .react-course-result {
   background: url(../assets/Image_back_2-min.png) no-repeat;
   background-size: cover;
-  min-height: 600px;
   width: 100%;
 }
 .react-course-result-content {
   max-width: 100%;
   z-index: 2;
+}
+.react-course-result-content-items {
+  margin-bottom: 50px;
 }
 .react-course-result-content-items-ul {
   margin-left: -14px;
