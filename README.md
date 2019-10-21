@@ -1,2 +1,2 @@
-# LanadingPage---learning-course
-REACT JS COURSE
+# EPAM: Welcome to React Course 
+
