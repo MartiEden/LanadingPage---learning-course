@@ -380,28 +380,27 @@
     </div>
 
     <script>
-        let items = document.querySelectorAll('.react-course-process-content-items-item');
-        const itemsParent =  document.querySelector('.react-course-process-content-items');
-        items = Array.from(items);
+        // const popOver = document.querySelector('.react-course-process-content-items-item-content-pop-message');
+        let popOver = null;
 
         document.addEventListener('click', function (e) {
             const element = e.target;
 
-            if (element.className == 'react-course-process-content-items-item-content-pop') {
+            if (element.className === 'react-course-process-content-items-item-content-pop') {
                 element.children[0].classList += ' icon-active';
+                popOver = element.children[0];
             }
 
             if (element.className == 'react-course-process-content-items-item-content-pop-message-close') {
                 element.closest('.react-course-process-content-items-item-content-pop-message').classList.remove('icon-active');
             }
+
+            if (!(element.className === 'react-course-process-content-items-item-content-pop') && !element.closest('.react-course-process-content-items-item-content-pop-message') && popOver) {          
+                
+                popOver.classList.remove('icon-active');
+            }
             e.preventDefault();
         })
-     
-        items.forEach(element => {
-            element.addEventListener('click', function (e) {
-           !e.target.classList.contains('icon-active') ?  this.querySelector('.react-course-process-content-items-item-content-pop-message').classList.remove('icon-active') :  console.log('нет');;
-            e.preventDefault();
-        })})
 
     </script>
 </body>
