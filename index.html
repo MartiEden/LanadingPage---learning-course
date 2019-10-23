@@ -110,7 +110,7 @@
                         <div class="react-course-process-content-items-item-content">
                             <span class="react-course-process-content-items-item-content-text">Ты и ментор
                                 согласовываете режим и формат общения</span>
-                            <span class="react-course-process-content-items-item-content-pop">Подробнее
+                            <span class="react-course-process-content-items-item-content-pop" id="pop1">Подробнее
                                 <span class="react-course-process-content-items-item-content-pop-message">
                                     <span class="react-course-process-content-items-item-content-pop-message-title">Ты и
                                         ментор
@@ -136,7 +136,7 @@
                         <div class="react-course-process-content-items-item-content">
                             <span class="react-course-process-content-items-item-content-text">Общаешься один-на-один с
                                 ментором</span>
-                            <span class="react-course-process-content-items-item-content-pop">Подробнее
+                            <span class="react-course-process-content-items-item-content-pop" id="pop4">Подробнее
                                 <span class="react-course-process-content-items-item-content-pop-message">
                                     <span
                                         class="react-course-process-content-items-item-content-pop-message-title">Общаешься
@@ -166,7 +166,7 @@
                         <div class="react-course-process-content-items-item-content">
                             <span class="react-course-process-content-items-item-content-text">Ментор составляет
                                 индивидуальный план обучения (PDP)</span>
-                            <span class="react-course-process-content-items-item-content-pop">Подробнее
+                            <span class="react-course-process-content-items-item-content-pop" id="pop2">Подробнее
                                 <span class="react-course-process-content-items-item-content-pop-message">
                                     <span
                                         class="react-course-process-content-items-item-content-pop-message-title">Ментор
@@ -193,7 +193,7 @@
                         <div class="react-course-process-content-items-item-content">
                             <span class="react-course-process-content-items-item-content-text">завершение
                                 обучения</span>
-                            <span class="react-course-process-content-items-item-content-pop">Подробнее
+                            <span class="react-course-process-content-items-item-content-pop" id="pop5">Подробнее
                                 <span class="react-course-process-content-items-item-content-pop-message">
 
                                     <span
@@ -217,7 +217,7 @@
                         </div>
 
                     </div>
-                    <div class="react-course-process-content-items-item">
+                    <div class="react-course-process-content-items-item" id="pop3">
                         <span class="react-course-process-content-items-item-number">3</span>
                         <div class="react-course-process-content-items-item-content">
                             <span class="react-course-process-content-items-item-content-text">Самостоятельная работа с
@@ -380,22 +380,28 @@
     </div>
 
     <script>
-        document.querySelector('.react-course-process').addEventListener('click', function (e) {
+        let items = document.querySelectorAll('.react-course-process-content-items-item');
+        const itemsParent =  document.querySelector('.react-course-process-content-items');
+        items = Array.from(items);
 
-            e.preventDefault();
+        document.addEventListener('click', function (e) {
             const element = e.target;
 
             if (element.className == 'react-course-process-content-items-item-content-pop') {
                 element.children[0].classList += ' icon-active';
-
             }
 
             if (element.className == 'react-course-process-content-items-item-content-pop-message-close') {
                 element.closest('.react-course-process-content-items-item-content-pop-message').classList.remove('icon-active');
             }
-
-
+            e.preventDefault();
         })
+     
+        items.forEach(element => {
+            element.addEventListener('click', function (e) {
+           !e.target.classList.contains('icon-active') ?  this.querySelector('.react-course-process-content-items-item-content-pop-message').classList.remove('icon-active') :  console.log('нет');;
+            e.preventDefault();
+        })})
 
     </script>
 </body>
